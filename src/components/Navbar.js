@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
+    <nav className="navbar navbar-dark bg-dark">
+      <a className="navbar-brand container" href="#">
         MyWallet powered by JFdeSousa
       </a>
     </nav>

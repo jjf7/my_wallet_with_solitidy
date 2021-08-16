@@ -57,10 +57,8 @@ export default function App() {
     const countTx = transactions.length-1;
     
      for(var i=countTx; i>=0 ; i--){
-         console.log(i, transactions[i])
         arrayTx.push(transactions[i])
      }
-
 
       //console.log(transactions)
 
@@ -85,7 +83,7 @@ export default function App() {
           amount.toString(),
           "ether"
         );
-        const result = await state.myWallet.methods
+      await state.myWallet.methods
           .transfer(addressTo, amountConverted)
           .send({ from: state.account });
 
